@@ -26,9 +26,9 @@ export default function WaitlistPage() {
             </p>
           </div>
 
-          <div className="mt-10 max-w-2xl rounded-2xl border border-border bg-surface p-2 sm:p-4">
+          <div className="mt-10 max-w-2xl overflow-hidden rounded-2xl border border-border bg-white">
             <iframe
-              src="https://tally.so/embed/dW88DK?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              src="https://tally.so/embed/dW88DK?alignLeft=1&hideTitle=1&dynamicHeight=1"
               loading="lazy"
               width="100%"
               height="500"
