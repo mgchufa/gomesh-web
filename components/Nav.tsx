@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Logo } from "./Logo";
 import { Container } from "./Container";
-import { TallyButton } from "./TallyButton";
+import { WaitlistButton } from "./WaitlistButton";
 
 const links = [
   { href: "/features", label: "Features" },
@@ -37,9 +37,9 @@ export function Nav() {
               {link.label}
             </Link>
           ))}
-          <TallyButton className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
+          <WaitlistButton className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
             Join waitlist
-          </TallyButton>
+          </WaitlistButton>
         </nav>
 
         <button
@@ -87,12 +87,12 @@ export function Nav() {
                 {link.label}
               </Link>
             ))}
-            <TallyButton
+            <WaitlistButton
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex justify-center rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer"
             >
               Join waitlist
-            </TallyButton>
+            </WaitlistButton>
           </Container>
         </div>
       )}

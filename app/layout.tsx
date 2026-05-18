@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import { TallyLoader } from "@/components/TallyLoader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,7 +60,6 @@ export default function RootLayout({
         <Nav />
         <main className="flex-1 flex flex-col">{children}</main>
         <Footer />
-        <TallyLoader />
       </body>
     </html>
   );

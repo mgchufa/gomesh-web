@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/Container";
-import { TallyButton } from "@/components/TallyButton";
+import { WaitlistButton } from "@/components/WaitlistButton";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -75,9 +75,9 @@ export default function ContactPage() {
               Or join the waitlist — that&apos;s the best way to stay in the loop.
             </h2>
             <div className="mt-6">
-              <TallyButton className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-6 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
+              <WaitlistButton className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-6 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
                 Join the waitlist
-              </TallyButton>
+              </WaitlistButton>
             </div>
           </div>
         </Container>

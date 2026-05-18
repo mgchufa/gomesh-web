@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
-import { TallyButton } from "@/components/TallyButton";
+import { WaitlistButton } from "@/components/WaitlistButton";
 
 export default function HomePage() {
   return (
@@ -35,9 +35,9 @@ export default function HomePage() {
           </div>
 
           <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4">
-            <TallyButton className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-7 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
+            <WaitlistButton className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-7 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
               Join the waitlist
-            </TallyButton>
+            </WaitlistButton>
             <Link
               href="/features"
               className="inline-flex h-12 items-center justify-center rounded-full border border-border bg-background px-6 text-sm font-medium hover:bg-surface transition-colors"
@@ -125,9 +125,9 @@ export default function HomePage() {
             we&apos;ll let you know the moment we land in yours.
           </p>
           <div className="mt-8">
-            <TallyButton className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-7 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
+            <WaitlistButton className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-7 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
               Join the waitlist
-            </TallyButton>
+            </WaitlistButton>
           </div>
         </Container>
       </section>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/Container";
-import { TallyButton } from "@/components/TallyButton";
+import { WaitlistButton } from "@/components/WaitlistButton";
 
 export const metadata: Metadata = {
   title: "Features",
@@ -114,9 +114,9 @@ export default function FeaturesPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <TallyButton className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-6 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
+            <WaitlistButton className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-6 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
               Join the waitlist
-            </TallyButton>
+            </WaitlistButton>
           </div>
         </Container>
       </section>

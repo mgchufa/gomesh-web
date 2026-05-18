@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/Container";
-import { TallyButton } from "@/components/TallyButton";
+import { WaitlistButton } from "@/components/WaitlistButton";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -94,9 +94,9 @@ export default function FAQPage() {
             Ready to join?
           </h2>
           <div className="mt-6">
-            <TallyButton className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-6 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
+            <WaitlistButton className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-6 text-sm font-medium text-accent-foreground hover:bg-accent-hover transition-colors cursor-pointer">
               Join the waitlist
-            </TallyButton>
+            </WaitlistButton>
           </div>
         </Container>
       </section>
