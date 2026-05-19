@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Go Mesh — Real-world connections, by interest";
+export const alt = "Go Mesh — Real-world connections wherever you are";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -52,26 +52,26 @@ export default function OpengraphImage() {
           <div
             style={{
               display: "flex",
-              fontSize: 96,
+              fontSize: 92,
               fontWeight: 600,
               lineHeight: 1.05,
               letterSpacing: -2,
-              maxWidth: 980,
+              maxWidth: 1020,
             }}
           >
-            Real-world connections.
+            Real-world connections
           </div>
           <div
             style={{
               display: "flex",
-              fontSize: 96,
+              fontSize: 92,
               fontWeight: 600,
               lineHeight: 1.05,
               letterSpacing: -2,
               color: "#818cf8",
             }}
           >
-            By interest.
+            wherever you are.
           </div>
         </div>
 
@@ -84,8 +84,8 @@ export default function OpengraphImage() {
             color: "#9ca3af",
           }}
         >
-          <span style={{ maxWidth: 720 }}>
-            Match with members and member-hosted events around what you love.
+          <span style={{ maxWidth: 760 }}>
+            The network for remote digital entrepreneurs.
           </span>
           <span style={{ color: "#fafafa", fontWeight: 500 }}>gomesh.app</span>
         </div>

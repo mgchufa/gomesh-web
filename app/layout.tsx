@@ -17,32 +17,32 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://gomesh.app"),
   title: {
-    default: "Go Mesh — Real-world connections, by interest",
+    default: "Go Mesh — Real-world connections wherever you are",
     template: "%s · Go Mesh",
   },
   description:
-    "Go Mesh matches you with people and member-hosted events around what you love — from Saturday runs to your next collaborator.",
+    "The network for remote digital entrepreneurs. Member-hosted events, co-founder matching, and private circles with founders in your ARR bracket.",
   keywords: [
     "Go Mesh",
-    "meetups",
-    "interest-based networking",
-    "professional networking",
-    "events",
-    "community app",
+    "remote entrepreneurs",
+    "co-founder matching",
+    "founder community",
+    "ARR networking",
+    "member-hosted events",
   ],
   openGraph: {
-    title: "Go Mesh — Real-world connections, by interest",
+    title: "Go Mesh — Real-world connections wherever you are",
     description:
-      "Match with members and events that align with your interests and ambitions.",
+      "The network for remote digital entrepreneurs. Member-hosted events, co-founder matching, and ARR-bracket circles.",
     url: "https://gomesh.app",
     siteName: "Go Mesh",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Go Mesh — Real-world connections, by interest",
+    title: "Go Mesh — Real-world connections wherever you are",
     description:
-      "Match with members and events that align with your interests and ambitions.",
+      "The network for remote digital entrepreneurs. Member-hosted events, co-founder matching, and ARR-bracket circles.",
   },
 };
 

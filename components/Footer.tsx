@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col gap-3">
           <Logo />
           <p className="text-sm text-muted max-w-xs">
-            Real-world connections. By interest.
+            Real-world connections wherever you are.
           </p>
         </div>
         <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
@@ -22,9 +22,6 @@ export function Footer() {
           </Link>
           <Link href="/faq" className="text-muted hover:text-foreground transition-colors">
             FAQ
-          </Link>
-          <Link href="/contact" className="text-muted hover:text-foreground transition-colors">
-            Contact
           </Link>
         </nav>
       </Container>
