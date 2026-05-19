@@ -1,5 +1,6 @@
-import Link from "next/link";
 import type { MouseEventHandler, ReactNode } from "react";
+
+const WAITLIST_URL = "https://tally.so/r/dW88DK";
 
 type Props = {
   children: ReactNode;
@@ -9,8 +10,8 @@ type Props = {
 
 export function WaitlistButton({ children, className, onClick }: Props) {
   return (
-    <Link href="/waitlist" className={className} onClick={onClick}>
+    <a href={WAITLIST_URL} className={className} onClick={onClick}>
       {children}
-    </Link>
+    </a>
   );
 }
