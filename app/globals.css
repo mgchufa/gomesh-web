@@ -1,15 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: light;
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --muted: #6b7280;
-  --border: #e5e7eb;
-  --accent: #4f46e5;
-  --accent-hover: #4338ca;
-  --accent-foreground: #ffffff;
-  --surface: #fafafa;
+  color-scheme: dark;
+
+  /* Brand palette */
+  --nocturnal:    #114C5A;
+  --forsythia:    #FFC801;
+  --oceanic:      #172B36;
+  --saffron:      #FF9932;
+  --arctic:       #F1F6F4;
+  --warm-white:   #F5F0E8;
+  --dark-text:    #0F1A1C;
+  --mid-text:     #3A5560;
+  --light-text:   #7A9AA8;
+
+  /* Semantic tokens */
+  --background:         var(--nocturnal);
+  --foreground:         var(--arctic);
+  --muted:              #8AACB8;
+  --border:             rgba(241, 246, 244, 0.12);
+  --surface:            var(--oceanic);
+  --accent:             var(--forsythia);
+  --accent-hover:       #FFD83D;
+  --accent-foreground:  var(--oceanic);
 }
 
 @theme inline {
@@ -21,14 +34,25 @@
   --color-accent-hover: var(--accent-hover);
   --color-accent-foreground: var(--accent-foreground);
   --color-surface: var(--surface);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-nocturnal: var(--nocturnal);
+  --color-forsythia: var(--forsythia);
+  --color-oceanic: var(--oceanic);
+  --color-saffron: var(--saffron);
+  --color-arctic: var(--arctic);
+  --color-warm-white: var(--warm-white);
+  --color-dark-text: var(--dark-text);
+  --color-mid-text: var(--mid-text);
+  --color-light-text: var(--light-text);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 

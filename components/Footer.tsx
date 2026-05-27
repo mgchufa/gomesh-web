@@ -1,33 +1,40 @@
-import Link from "next/link";
-import { Container } from "./Container";
 import { Logo } from "./Logo";
+import { SOCIAL_LINKS } from "./SocialIcons";
 
 export function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="border-t border-border bg-surface">
-      <Container className="flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-col gap-3">
-          <Logo />
-          <p className="text-sm text-muted max-w-xs">
-            Real-world connections wherever you are.
+    <footer
+      className="bg-oceanic"
+      style={{ borderTop: "3px solid var(--forsythia)" }}
+    >
+      <div className="flex flex-col gap-6 py-10 px-6 sm:px-10 sm:flex-row sm:items-center sm:justify-between">
+        <Logo textClassName="text-forsythia" />
+
+        <div className="flex flex-col items-start gap-3 sm:items-end">
+          <ul className="flex items-center gap-3">
+            {SOCIAL_LINKS.map(({ href, label, Icon }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="block transition-transform hover:-translate-y-0.5"
+                >
+                  <Icon className="h-7 w-7" />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p
+            className="text-light-text"
+            style={{ fontSize: "11px", letterSpacing: "0.06em" }}
+          >
+            © {year} Mesh. All rights reserved.
           </p>
         </div>
-        <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-          <Link href="/features" className="text-muted hover:text-foreground transition-colors">
-            Features
-          </Link>
-          <Link href="/about" className="text-muted hover:text-foreground transition-colors">
-            About
-          </Link>
-          <Link href="/faq" className="text-muted hover:text-foreground transition-colors">
-            FAQ
-          </Link>
-        </nav>
-      </Container>
-      <Container className="border-t border-border py-4">
-        <p className="text-xs text-muted">© {year} Go Mesh. All rights reserved.</p>
-      </Container>
+      </div>
     </footer>
   );
 }

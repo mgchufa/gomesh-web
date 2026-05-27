@@ -1,48 +1,49 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Epilogue, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const epilogue = Epilogue({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["400", "700", "900"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmSans = DM_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gomesh.app"),
   title: {
-    default: "Go Mesh — Real-world connections wherever you are",
-    template: "%s · Go Mesh",
+    default: "Mesh — Build Above Your Weight",
+    template: "%s · Mesh",
   },
   description:
-    "The network for remote digital entrepreneurs. Member-hosted events, co-founder matching, and private circles with founders in your ARR bracket.",
+    "Mesh with your weight class, mentor up & comers, retreat with your kind, build with the best.",
   keywords: [
-    "Go Mesh",
-    "remote entrepreneurs",
-    "co-founder matching",
+    "Mesh",
     "founder community",
+    "co-founder matching",
     "ARR networking",
     "member-hosted events",
   ],
   openGraph: {
-    title: "Go Mesh — Real-world connections wherever you are",
+    title: "Mesh — Build Above Your Weight",
     description:
-      "The network for remote digital entrepreneurs. Member-hosted events, co-founder matching, and ARR-bracket circles.",
+      "Mesh with your weight class, mentor up & comers, retreat with your kind, build with the best.",
     url: "https://gomesh.app",
-    siteName: "Go Mesh",
+    siteName: "Mesh",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Go Mesh — Real-world connections wherever you are",
+    title: "Mesh — Build Above Your Weight",
     description:
-      "The network for remote digital entrepreneurs. Member-hosted events, co-founder matching, and ARR-bracket circles.",
+      "Mesh with your weight class, mentor up & comers, retreat with your kind, build with the best.",
   },
 };
 
@@ -54,7 +55,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${epilogue.variable} ${dmSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Nav />
