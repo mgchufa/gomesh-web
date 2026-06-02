@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Logo } from "./Logo";
 import { SOCIAL_LINKS } from "./SocialIcons";
 
@@ -27,12 +28,30 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <p
-            className="text-light-text"
+          <div
+            className="flex flex-wrap items-center gap-x-3 gap-y-1 text-light-text"
             style={{ fontSize: "11px", letterSpacing: "0.06em" }}
           >
-            © {year} Mesh. All rights reserved.
-          </p>
+            <Link
+              href="/privacy"
+              className="hover:text-forsythia transition-colors"
+            >
+              Privacy
+            </Link>
+            <span aria-hidden className="text-light-text/40">
+              ·
+            </span>
+            <Link
+              href="/terms"
+              className="hover:text-forsythia transition-colors"
+            >
+              Terms
+            </Link>
+            <span aria-hidden className="text-light-text/40">
+              ·
+            </span>
+            <span>© {year} Mesh. All rights reserved.</span>
+          </div>
         </div>
       </div>
     </footer>
