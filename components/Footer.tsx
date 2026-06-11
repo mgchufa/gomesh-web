@@ -49,7 +49,7 @@ export function Footer() {
             <span aria-hidden className="text-warm-gray/40">
               ·
             </span>
-            <span>© {year} Mesh · Est. 2026</span>
+            <span>© {year} Mesh</span>
           </div>
         </div>
       </div>
