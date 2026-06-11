@@ -164,6 +164,17 @@ export default function PrivacyPage() {
               referral reward is earned (see Section 4).
             </LI>
             <LI>
+              <Strong>Retreat data:</Strong> if you host or attend a
+              member-hosted retreat, we collect retreat reservations and
+              payments, your role (host or attendee), the Airbnb
+              reservation-confirmation email you forward to us (which may
+              include the host&apos;s and other participants&apos; information
+              and Airbnb booking details), confirmations and attestations you
+              submit at each stage (booking confirmed, added as a guest,
+              arrival), and payout information for hosts. Retreat funds are
+              processed and held by Stripe, not Mesh.
+            </LI>
+            <LI>
               <Strong>Content and communications:</Strong> messages you send to
               other members, posts, event listings you create or RSVP to,
               vendor inquiries, and information you provide when you contact
@@ -227,7 +238,11 @@ export default function PrivacyPage() {
             We use your information to: create and manage your account and
             profile; power co-founder matching, member discovery, and
             local-first recommendations; enable member-hosted events and vendor
-            matching; verify members and issue badges; administer the referral
+            matching; operate member-hosted retreats, including verifying
+            booking and arrival stages, instructing Stripe on rule-based fund
+            releases, processing host payouts, and defending payment disputes
+            and chargebacks; verify members and issue badges; administer the
+            referral
             program and determine and pay rewards; detect and prevent referral
             and other fraud; process payments, subscriptions, renewals, and
             refund requests; enable member-to-member messaging; keep the
@@ -301,8 +316,16 @@ export default function PrivacyPage() {
               attend their event.
             </LI>
             <LI>
-              <Strong>Stripe:</Strong> for identity verification, payments, and
-              referral payouts.
+              <Strong>Retreat hosts and co-attendees:</Strong> if you host or
+              join a retreat, your identity and relevant reservation details are
+              shared with the retreat&apos;s host and, as needed, with other
+              attendees (for example, to add you as a named guest on the lodging
+              reservation). Hosts receive attendee information needed to
+              organize the retreat.
+            </LI>
+            <LI>
+              <Strong>Stripe:</Strong> for identity verification, payments,
+              retreat fund custody and payouts, and referral payouts.
             </LI>
             <LI>
               <Strong>Service providers:</Strong> vendors who host, support,
