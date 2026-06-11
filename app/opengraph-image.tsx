@@ -4,6 +4,8 @@ export const alt = "Mesh — Build Above Your Weight";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+// Note: Satori renders with a system sans here (the Playfair Didone isn't
+// embedded) — the brand is carried by the palette and the threshold mark.
 export default function OpengraphImage() {
   return new ImageResponse(
     (
@@ -15,61 +17,68 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 72,
-          background: "#114C5A",
-          backgroundImage:
-            "radial-gradient(ellipse at 60% 40%, #1A6070 0%, #114C5A 50%, #0A2830 100%)",
-          color: "#F1F6F4",
+          background: "#FBFAF7",
+          color: "#211F19",
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span
-            style={{
-              fontSize: 44,
-              fontWeight: 900,
-              letterSpacing: "-0.05em",
-              color: "#FFC801",
-              lineHeight: 0.85,
-            }}
-          >
-            Mesh
-          </span>
-          <span
-            style={{
-              width: 8,
-              height: 8,
-              borderRadius: 999,
-              background: "#FFC801",
-              marginLeft: 4,
-              marginBottom: 4,
-            }}
-          />
-        </div>
-
-        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        {/* Wordmark lockup — threshold tile + lowercase mesh */}
+        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
           <div
             style={{
               display: "flex",
-              fontSize: 120,
-              fontWeight: 900,
-              lineHeight: 0.95,
-              letterSpacing: "-0.04em",
+              alignItems: "center",
+              justifyContent: "center",
+              width: 64,
+              height: 64,
+              borderRadius: 15,
+              background: "#5E2F52",
+            }}
+          >
+            <svg width="36" height="36" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="#F4F1EA"
+                d="M40 196 L40 74 Q40 66 48 66 L192 66 Q200 66 200 74 L200 196 L150 196 L150 116 Q150 112 146 112 L94 112 Q90 112 90 116 L90 196 Z"
+              />
+            </svg>
+          </div>
+          <span
+            style={{
+              fontSize: 46,
+              fontWeight: 600,
+              letterSpacing: "-0.01em",
+              color: "#5E2F52",
+              lineHeight: 1,
+            }}
+          >
+            mesh
+          </span>
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+          <div
+            style={{
+              display: "flex",
+              fontSize: 118,
+              fontWeight: 700,
+              lineHeight: 0.98,
+              letterSpacing: "-0.03em",
               maxWidth: 1020,
             }}
           >
-            Build Above
+            Build above
           </div>
           <div
             style={{
               display: "flex",
-              fontSize: 120,
-              fontWeight: 900,
-              lineHeight: 0.95,
-              letterSpacing: "-0.04em",
-              color: "#FFC801",
+              fontSize: 118,
+              fontWeight: 700,
+              lineHeight: 0.98,
+              letterSpacing: "-0.03em",
+              color: "#5E2F52",
             }}
           >
-            Your Weight.
+            your weight.
           </div>
         </div>
 
@@ -79,16 +88,16 @@ export default function OpengraphImage() {
             justifyContent: "space-between",
             alignItems: "flex-end",
             fontSize: 24,
-            color: "rgba(241,246,244,0.7)",
+            color: "#56544C",
           }}
         >
-          <span style={{ maxWidth: 720, letterSpacing: "0.02em" }}>
+          <span style={{ maxWidth: 720, letterSpacing: "0.01em" }}>
             Mesh with your weight class. Retreat with your kind.
           </span>
           <span
             style={{
-              color: "#FFC801",
-              fontWeight: 700,
+              color: "#8C8678",
+              fontWeight: 500,
               letterSpacing: "0.18em",
               textTransform: "uppercase",
               fontSize: 16,

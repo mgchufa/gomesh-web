@@ -3,6 +3,7 @@ import { ImageResponse } from "next/og";
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
+// Paper threshold on an aubergine tile. iOS applies its own rounded mask.
 export default function AppleIcon() {
   return new ImageResponse(
     (
@@ -13,28 +14,14 @@ export default function AppleIcon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#114C5A",
+          background: "#5E2F52",
         }}
       >
-        <svg
-          width="120"
-          height="120"
-          viewBox="0 0 28 28"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="104" height="104" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
           <path
-            d="M6 6L14 14L22 6M6 22L14 14L22 22M6 6V22M22 6V22"
-            stroke="#FFC801"
-            strokeWidth="1.4"
-            strokeLinecap="round"
-            fill="none"
-            opacity="0.55"
+            fill="#F4F1EA"
+            d="M40 196 L40 74 Q40 66 48 66 L192 66 Q200 66 200 74 L200 196 L150 196 L150 116 Q150 112 146 112 L94 112 Q90 112 90 116 L90 196 Z"
           />
-          <circle cx="6" cy="6" r="2.5" fill="#FFC801" />
-          <circle cx="22" cy="6" r="2.5" fill="#FFC801" />
-          <circle cx="14" cy="14" r="3" fill="#FFC801" />
-          <circle cx="6" cy="22" r="2.5" fill="#FFC801" />
-          <circle cx="22" cy="22" r="2.5" fill="#FFC801" />
         </svg>
       </div>
     ),

@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
-import { Epilogue, DM_Sans } from "next/font/google";
+import { Playfair_Display, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
-const epilogue = Epilogue({
+// Display — the high-contrast Didone. Sets the wordmark and headlines.
+const playfair = Playfair_Display({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "700", "900"],
+  style: ["normal", "italic"],
 });
 
-const dmSans = DM_Sans({
+// Body & UI — an even, readable grotesque that does the everyday work.
+const hanken = Hanken_Grotesk({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+});
+
+// Labels · indices · metadata — the structural mono.
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -55,7 +62,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${epilogue.variable} ${dmSans.variable} h-full antialiased`}
+      className={`${playfair.variable} ${hanken.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Nav />

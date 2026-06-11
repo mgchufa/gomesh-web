@@ -3,26 +3,35 @@
 :root {
   color-scheme: dark;
 
-  /* Brand palette */
-  --nocturnal:    #114C5A;
-  --forsythia:    #FFC801;
-  --oceanic:      #172B36;
-  --saffron:      #FF9932;
-  --arctic:       #F1F6F4;
-  --warm-white:   #F5F0E8;
-  --dark-text:    #0F1A1C;
-  --mid-text:     #3A5560;
-  --light-text:   #7A9AA8;
+  /* ——— Mesh brand palette · Brand Identity Kit v1.0 ——— */
+  --aubergine:      #5E2F52;   /* primary · jewel accent */
+  --aubergine-soft: #7A4A6E;
+  --graphite:       #211F19;   /* ink · text (warm near-black) */
+  --warm-gray:      #8C8678;   /* muted · secondary voice */
+  --paper:          #F4F1EA;   /* the ground */
+  --page:           #FBFAF7;   /* page field — a shade above paper */
+  --surface:        #FFFFFF;   /* cards */
+  --sub:            #56544C;   /* readable secondary body */
+  --hair:           #E3DDD0;   /* hairline on light */
+  --hair-2:         #EFEAE0;
 
-  /* Semantic tokens */
-  --background:         var(--nocturnal);
-  --foreground:         var(--arctic);
-  --muted:              #8AACB8;
-  --border:             rgba(241, 246, 244, 0.12);
-  --surface:            var(--oceanic);
-  --accent:             var(--forsythia);
-  --accent-hover:       #FFD83D;
-  --accent-foreground:  var(--oceanic);
+  /* Semantic tokens — "On Dark" is the default ground */
+  --background:         var(--graphite);
+  --foreground:         var(--paper);
+  --muted:              var(--warm-gray);
+  --border:             rgba(244, 241, 234, 0.12);
+  --accent:             var(--aubergine);
+  --accent-hover:       var(--aubergine-soft);
+  --accent-foreground:  var(--paper);
+
+  /* Back-compat aliases — existing pages (privacy/terms) restyle into the
+     new system without per-line rewrites: light ground, graphite ink,
+     aubergine accent. */
+  --nocturnal:  var(--page);
+  --forsythia:  var(--aubergine);
+  --oceanic:    var(--surface);
+  --arctic:     var(--graphite);
+  --light-text: var(--warm-gray);
 }
 
 @theme inline {
@@ -35,32 +44,31 @@
   --color-accent-foreground: var(--accent-foreground);
   --color-surface: var(--surface);
 
+  /* Mesh palette utilities */
+  --color-aubergine: var(--aubergine);
+  --color-aubergine-soft: var(--aubergine-soft);
+  --color-graphite: var(--graphite);
+  --color-warm-gray: var(--warm-gray);
+  --color-paper: var(--paper);
+  --color-page: var(--page);
+  --color-sub: var(--sub);
+  --color-hair: var(--hair);
+
+  /* Back-compat color utilities */
   --color-nocturnal: var(--nocturnal);
   --color-forsythia: var(--forsythia);
   --color-oceanic: var(--oceanic);
-  --color-saffron: var(--saffron);
   --color-arctic: var(--arctic);
-  --color-warm-white: var(--warm-white);
-  --color-dark-text: var(--dark-text);
-  --color-mid-text: var(--mid-text);
   --color-light-text: var(--light-text);
 
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
-}
-
-@keyframes mesh-pulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 1; }
-}
-
-.mesh-dot {
-  animation: mesh-pulse 4s ease-in-out infinite;
 }
