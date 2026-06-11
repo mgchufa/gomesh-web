@@ -6,13 +6,13 @@ export function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer
-      className="bg-graphite"
+      className="shrink-0 bg-graphite"
       style={{ borderTop: "1px solid rgba(244, 241, 234, 0.12)" }}
     >
-      <div className="flex flex-col gap-10 py-14 px-6 sm:px-10 sm:flex-row sm:items-end sm:justify-between">
+      <div className="flex flex-col gap-6 py-7 px-6 sm:px-10 sm:flex-row sm:items-end sm:justify-between">
         <Lockup
-          markHeight={48}
-          wordSize={40}
+          markHeight={34}
+          wordSize={28}
           markColor="text-paper"
           wordColor="text-paper"
         />

@@ -64,9 +64,9 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${hanken.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      <body className="h-screen overflow-hidden flex flex-col bg-background text-foreground">
         <Nav />
-        <main className="flex-1 flex flex-col">{children}</main>
+        <main className="flex-1 flex flex-col min-h-0">{children}</main>
         <Footer />
       </body>
     </html>
