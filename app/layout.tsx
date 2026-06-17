@@ -26,31 +26,31 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://gomesh.app"),
   title: {
-    default: "Mesh — Build Above Your Weight",
+    default: "Mesh — Build together.",
     template: "%s · Mesh",
   },
   description:
-    "Mesh with your weight class, mentor up & comers, retreat with your kind, build with the best.",
+    "Mesh with digital business owners around the world. Learn, inspire, build, and host retreats together.",
   keywords: [
     "Mesh",
     "founder community",
     "co-founder matching",
-    "ARR networking",
-    "member-hosted events",
+    "digital business owners",
+    "member-hosted retreats",
   ],
   openGraph: {
-    title: "Mesh — Build Above Your Weight",
+    title: "Mesh — Build together.",
     description:
-      "Mesh with your weight class, mentor up & comers, retreat with your kind, build with the best.",
+      "Mesh with digital business owners around the world. Learn, inspire, build, and host retreats together.",
     url: "https://gomesh.app",
     siteName: "Mesh",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mesh — Build Above Your Weight",
+    title: "Mesh — Build together.",
     description:
-      "Mesh with your weight class, mentor up & comers, retreat with your kind, build with the best.",
+      "Mesh with digital business owners around the world. Learn, inspire, build, and host retreats together.",
   },
 };
 

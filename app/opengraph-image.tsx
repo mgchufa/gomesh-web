@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Mesh — Build Above Your Weight";
+export const alt = "Mesh — Build together.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -66,7 +66,7 @@ export default function OpengraphImage() {
               maxWidth: 1020,
             }}
           >
-            Build above
+            Build
           </div>
           <div
             style={{
@@ -78,7 +78,7 @@ export default function OpengraphImage() {
               color: "#5E2F52",
             }}
           >
-            your weight.
+            together.
           </div>
         </div>
 
@@ -92,7 +92,7 @@ export default function OpengraphImage() {
           }}
         >
           <span style={{ maxWidth: 720, letterSpacing: "0.01em" }}>
-            Mesh with your weight class. Retreat with your kind.
+            Mesh with digital business owners around the world.
           </span>
           <span
             style={{
