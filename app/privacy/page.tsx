@@ -400,22 +400,14 @@ export default function PrivacyPage() {
             </LI>
           </UL>
           <P>
-            <Strong>We do not sell your personal information for money.</Strong>{" "}
-            However, we do <Strong>&ldquo;share&rdquo;</Strong> certain
-            personal information (such as identifiers, device data, and usage
-            activity) with advertising and analytics partners for{" "}
-            <Strong>cross-context behavioral advertising</Strong> — meaning
-            targeted advertising based on your activity across different sites
-            and services. Under California law (CCPA/CPRA) and similar US state
-            laws, this kind of &ldquo;sharing&rdquo; gives you the right to opt
-            out. You can opt out at any time by using the{" "}
             <Strong>
-              &ldquo;Do Not Sell or Share My Personal Information&rdquo;
+              We do not sell your personal information, and we do not share it
+              with third parties for cross-context behavioral advertising
             </Strong>{" "}
-            link in the Service or by contacting{" "}
-            <Email address="privacy@gomesh.app" />, and we honor recognized
-            opt-out preference signals (such as Global Privacy Control) where
-            required.
+            (targeted advertising based on your activity across different sites
+            and services). We do not use non-essential advertising cookies or
+            similar technologies, and we do not pass identifiers, device data,
+            or usage activity to advertising networks or ad-tech partners.
           </P>
 
           <HR />
@@ -424,15 +416,14 @@ export default function PrivacyPage() {
           <P>
             We use cookies and similar technologies to operate the Service,
             remember preferences, keep you signed in, track invite attribution,
-            and analyze usage. We also use{" "}
-            <Strong>non-essential cookies and similar technologies</Strong> —
-            including analytics and advertising cookies that support the
-            cross-context behavioral advertising described in Section 6. Where
-            required by law, we request your consent before setting
-            non-essential cookies through a consent banner, and you can change
-            your choices at any time. You can also manage cookies through your
-            browser or device settings; blocking some cookies may affect how
-            the Service works.
+            and analyze usage on an aggregate, internal basis.{" "}
+            <Strong>
+              We do not use non-essential cookies for third-party advertising,
+              and we do not share cookie or usage data with advertising
+              networks or ad-tech partners.
+            </Strong>{" "}
+            You can manage cookies through your browser or device settings;
+            blocking some cookies may affect how the Service works.
           </P>
 
           <HR />
@@ -442,15 +433,16 @@ export default function PrivacyPage() {
             Depending on where you live (including under California&apos;s
             CCPA/CPRA and other US state privacy laws), you may have the right
             to access, correct, delete, or port your information; to opt out of
-            marketing and of any &ldquo;sale&rdquo;/&ldquo;sharing&rdquo; or
-            cross-context behavioral advertising (see the{" "}
+            marketing communications; and to withdraw consent.{" "}
             <Strong>
-              &ldquo;Do Not Sell or Share My Personal Information&rdquo;
+              Mesh does not sell or share personal information for
+              cross-context behavioral advertising, so there is no
+              &ldquo;sale&rdquo;/&ldquo;sharing&rdquo; opt-out to exercise
             </Strong>{" "}
-            option described in Section 6); and to withdraw consent. To
-            exercise a right, contact <Email address="privacy@gomesh.app" />.
-            We will verify and respond within the time the law requires, and
-            you will not be discriminated against for exercising your rights.
+            (see Section 6). To exercise a right, contact{" "}
+            <Email address="privacy@gomesh.app" />. We will verify and respond
+            within the time the law requires, and you will not be discriminated
+            against for exercising your rights.
           </P>
 
           <HR />
