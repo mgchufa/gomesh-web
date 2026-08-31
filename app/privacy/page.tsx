@@ -19,7 +19,7 @@ const H2 = ({ children }: { children: React.ReactNode }) => (
 const H3 = ({ children }: { children: React.ReactNode }) => (
   <h3
     className="font-display font-bold text-arctic mt-8 mb-3"
-    style={{ fontSize: "17px", letterSpacing: "-0.02em" }}
+    style={{ fontSize: "13px", letterSpacing: "0.18em", textTransform: "uppercase" }}
   >
     {children}
   </h3>
@@ -88,7 +88,7 @@ export default function PrivacyPage() {
           className="mt-6 text-arctic/60 uppercase font-medium"
           style={{ fontSize: "11px", letterSpacing: "0.18em" }}
         >
-          Effective Date: June 2, 2026 — Last Updated: June 2, 2026
+          Effective Date: August 31, 2026 — Last Updated: August 31, 2026
         </p>
 
         <div className="mt-10">
@@ -101,12 +101,13 @@ export default function PrivacyPage() {
             services (collectively, the &ldquo;Service&rdquo;).
           </P>
           <P>
-            Mesh is a curated platform that helps entrepreneurs find
-            co-founders, connect with other members, attend member-hosted
-            events, discover vendors, and participate in our referral program.
-            Because the Service is built around connecting people with one
-            another, please read this Policy carefully so you understand what
-            is shared with other members versus what we keep private.
+            Mesh is a curated, invitation-only platform that helps
+            entrepreneurs find co-founders, connect with other members, attend
+            member-hosted events and retreats, discover vendors, and access
+            private concierge services. Because the Service is built around
+            connecting people with one another, please read this Policy
+            carefully so you understand what is shared with other members
+            versus what we keep private.
           </P>
           <P>
             By using the Service, you acknowledge that you have read and
@@ -138,7 +139,10 @@ export default function PrivacyPage() {
             <LI>
               <Strong>Account and registration data:</Strong> name, email
               address, phone number, password, and (where required) date of
-              birth to confirm you are at least 18.
+              birth to confirm you are at least 18.{" "}
+              <Strong>
+                Creating an account requires a valid, unused invite code.
+              </Strong>
             </LI>
             <LI>
               <Strong>Profile information:</Strong> your professional
@@ -153,15 +157,17 @@ export default function PrivacyPage() {
               through Stripe Identity (see Section 4).
             </LI>
             <LI>
-              <Strong>Payment information:</Strong> billing details for
-              subscriptions, processed through our payment provider (Stripe).
-              We do not store full card numbers ourselves.
+              <Strong>Host verification call data:</Strong> if you apply to
+              host a retreat, adventure, or event, notes from — and, where
+              applicable, a recording of — the verification phone call between
+              you and Mesh, used to confirm your identity and that the listing
+              is genuine (see Section 4).
             </LI>
             <LI>
-              <Strong>Referral data:</Strong> referral codes you create or
-              enter, the identity of members you refer or who referred you, and
-              the subscription/payment status used to determine whether a
-              referral reward is earned (see Section 4).
+              <Strong>Invite data:</Strong> the invite code you signed up with,
+              invite codes you receive as a member and their redemption status,
+              and the identities of members you invite or who invited you, used
+              to administer the invite program described in Section 4.
             </LI>
             <LI>
               <Strong>Retreat data:</Strong> if you host or attend a
@@ -171,8 +177,17 @@ export default function PrivacyPage() {
               include the host&apos;s and other participants&apos; information
               and Airbnb booking details), confirmations and attestations you
               submit at each stage (booking confirmed, added as a guest,
-              arrival), and payout information for hosts. Retreat funds are
+              arrival), the Host&apos;s warranty that the retreat is real (see
+              Section 4), and payout information for hosts. Retreat funds are
               processed and held by Stripe, not Mesh.
+            </LI>
+            <LI>
+              <Strong>Concierge and vendor booking data:</Strong> if you
+              request a private concierge booking (such as a luxury car rental,
+              yacht, or private chef), the details of your request (dates,
+              preferences, party size, contact information) and any information
+              needed to complete the booking with the third-party vendor
+              providing the service.
             </LI>
             <LI>
               <Strong>Content and communications:</Strong> messages you send to
@@ -192,7 +207,7 @@ export default function PrivacyPage() {
             <LI>
               <Strong>Usage data:</Strong> features you use, matches and
               connections you make, events you view or attend, search activity,
-              referral activity, and interaction patterns.
+              invite activity, and interaction patterns.
             </LI>
             <LI>
               <Strong>Device and technical data:</Strong> IP address, device
@@ -226,6 +241,10 @@ export default function PrivacyPage() {
               and limited billing metadata.
             </LI>
             <LI>
+              <Strong>Concierge vendors:</Strong> confirmation of bookings you
+              request through the private concierge service.
+            </LI>
+            <LI>
               <Strong>Analytics partners:</Strong> aggregated or device-level
               data about how you reach and use the Service.
             </LI>
@@ -236,25 +255,29 @@ export default function PrivacyPage() {
           <H2>3. How We Use Your Information</H2>
           <P>
             We use your information to: create and manage your account and
-            profile; power co-founder matching, member discovery, and
-            local-first recommendations; enable member-hosted events and vendor
-            matching; operate member-hosted retreats, including verifying
-            booking and arrival stages, instructing Stripe on rule-based fund
-            releases, processing host payouts, and defending payment disputes
-            and chargebacks; verify members and issue badges; administer the
-            referral
-            program and determine and pay rewards; detect and prevent referral
-            and other fraud; process payments, subscriptions, renewals, and
-            refund requests; enable member-to-member messaging; keep the
-            Service safe; provide support; send service-related and (where
-            permitted) marketing communications you can opt out of; analyze and
-            improve the Service; enforce our Terms; and comply with legal, tax,
-            and regulatory obligations.
+            profile; verify and administer invite codes and invite rewards;
+            power co-founder matching, member discovery, and local-first
+            recommendations; enable member-hosted events and vendor matching;
+            operate member-hosted retreats, including verifying booking and
+            arrival stages, instructing Stripe on rule-based fund releases,
+            processing host payouts, and defending payment disputes and
+            chargebacks; verify members and prospective hosts (including
+            through verification phone calls) and issue badges; arrange and
+            facilitate private concierge bookings with third-party vendors on
+            your behalf; detect and prevent invite abuse, host fraud, and other
+            fraud; process payments and refund requests; enable
+            member-to-member messaging; keep the Service safe; provide support;
+            send service-related and (where permitted) marketing communications
+            you can opt out of; analyze and improve the Service; enforce our
+            Terms; and comply with legal, tax, and regulatory obligations.
           </P>
 
           <HR />
 
-          <H2>4. Identity Verification, Badges, and the Referral Program</H2>
+          <H2>
+            4. Identity Verification, Host Verification, Badges, and the Invite
+            Program
+          </H2>
           <P>
             <Strong>Identity verification.</Strong> We use{" "}
             <Strong>Stripe Identity</Strong> to verify member identities and
@@ -271,15 +294,38 @@ export default function PrivacyPage() {
             business, financial, or personal relationship with another member.
           </P>
           <P>
-            <Strong>Referral program.</Strong> The referral program is available{" "}
-            <Strong>only to paying members.</Strong> We process your referral
-            code, the identities of members connected through it, and the
-            subscription and payment status needed to determine whether a
-            reward is earned, to calculate reward tiers, and to prevent abuse.
-            Reward payouts may require sharing limited information with our
-            payment provider and, where required by law, collecting tax
-            information (e.g., a W-9 or W-8). Program rules are in our Terms of
-            Service.
+            <Strong>Host verification calls.</Strong> During Mesh&apos;s early
+            growth phase, before a member may host a retreat, adventure, or
+            event, Mesh may conduct a phone call with that member to verify
+            their identity and confirm the listing is genuine, in addition to
+            Stripe Identity checks.{" "}
+            <Strong>
+              These calls may be recorded, and we will tell you before the call
+              begins if it is being recorded.
+            </Strong>{" "}
+            We keep notes and any recording as described in Section 9.
+            Completing this call does not guarantee approval to host; Mesh may
+            decline at its discretion.
+          </P>
+          <P>
+            <Strong>Invite program.</Strong> Mesh is invitation-only: you need
+            a valid, unused invite code from an existing member (or from Mesh)
+            to create an account. As a member, you may earn additional invite
+            codes to give to people you know: by default when you join, by
+            completing your profile, by adding a verified business email, by
+            hosting an adventure or event, and by hosting a retreat.{" "}
+            <Strong>
+              Invite codes are single-use, do not expire, and may only be used
+              by the person they were issued to — they cannot be transferred,
+              sold, purchased, or otherwise monetized.
+            </Strong>{" "}
+            We process the invite code you used to join, the codes you hold or
+            redeem, and the identities of members connected through invites to
+            administer the program, calculate reward eligibility, and prevent
+            abuse. If a member you invited is removed from the Service for
+            cause, we may take that into account when evaluating your own
+            account, and we retain full discretion over who may join or remain
+            on Mesh.
           </P>
 
           <HR />
@@ -288,9 +334,9 @@ export default function PrivacyPage() {
           <P>
             Where a comprehensive data-protection law applies to your use of
             the Service, we rely on these bases: <Strong>contract</Strong> (to
-            provide the Service, subscriptions, and the referral program);{" "}
-            <Strong>consent</Strong> (for precise location and certain
-            marketing, withdrawable at any time);{" "}
+            provide the Service and the invite program);{" "}
+            <Strong>consent</Strong> (for precise location, host verification
+            call recording, and certain marketing, withdrawable at any time);{" "}
             <Strong>legitimate interests</Strong> (to operate, secure, and
             improve the Service and prevent fraud); and{" "}
             <Strong>legal obligation</Strong> (including tax and anti-fraud
@@ -317,15 +363,26 @@ export default function PrivacyPage() {
             </LI>
             <LI>
               <Strong>Retreat hosts and co-attendees:</Strong> if you host or
-              join a retreat, your identity and relevant reservation details are
-              shared with the retreat&apos;s host and, as needed, with other
-              attendees (for example, to add you as a named guest on the lodging
-              reservation). Hosts receive attendee information needed to
-              organize the retreat.
+              join a retreat, your identity and relevant reservation details
+              are shared with the retreat&apos;s host and, as needed, with
+              other attendees (for example, to add you as a named guest on the
+              lodging reservation). Hosts receive attendee information needed
+              to organize the retreat.
             </LI>
             <LI>
-              <Strong>Stripe:</Strong> for identity verification, payments,
-              retreat fund custody and payouts, and referral payouts.
+              <Strong>Concierge vendors:</Strong> when you request a private
+              concierge booking (car rental, yacht, or private chef), we share
+              the information needed to complete that booking — such as your
+              name, contact details, dates, and preferences — with the
+              third-party vendor providing the service.{" "}
+              <Strong>
+                The vendor, not Mesh, is the merchant of record for that
+                booking and is responsible for delivering it.
+              </Strong>
+            </LI>
+            <LI>
+              <Strong>Stripe:</Strong> for identity verification, payments, and
+              retreat fund custody and payouts.
             </LI>
             <LI>
               <Strong>Service providers:</Strong> vendors who host, support,
@@ -366,8 +423,8 @@ export default function PrivacyPage() {
           <H2>7. Cookies and Similar Technologies</H2>
           <P>
             We use cookies and similar technologies to operate the Service,
-            remember preferences, keep you signed in, track referral
-            attribution, and analyze usage. We also use{" "}
+            remember preferences, keep you signed in, track invite attribution,
+            and analyze usage. We also use{" "}
             <Strong>non-essential cookies and similar technologies</Strong> —
             including analytics and advertising cookies that support the
             cross-context behavioral advertising described in Section 6. Where
@@ -419,13 +476,24 @@ export default function PrivacyPage() {
               longer to investigate fraud, abuse, or a legal claim.
             </LI>
             <LI>
-              <Strong>
-                Payment, transaction, referral-payout, and tax records:
-              </Strong>{" "}
-              retained for <Strong>2,555 days (7 years)</Strong> to meet
-              accounting, tax, and audit obligations that apply in most
-              jurisdictions; some jurisdictions may require a longer period, in
-              which case we follow the longer requirement.
+              <Strong>Host verification call notes and recordings:</Strong>{" "}
+              retained for as long as you remain an active or prospective host,
+              and for up to <Strong>2 years</Strong> after your most recent
+              hosting-verification call, unless we need it longer to
+              investigate fraud, abuse, or a legal claim.
+            </LI>
+            <LI>
+              <Strong>Invite code and reward data:</Strong> retained while your
+              account is active and for <Strong>90 days</Strong> after account
+              closure, unless needed longer to investigate abuse of the
+              program.
+            </LI>
+            <LI>
+              <Strong>Payment, transaction, and tax records:</Strong> retained
+              for <Strong>2,555 days (7 years)</Strong> to meet accounting,
+              tax, and audit obligations that apply in most jurisdictions; some
+              jurisdictions may require a longer period, in which case we
+              follow the longer requirement.
             </LI>
             <LI>
               <Strong>Safety, fraud, and legal-hold records:</Strong> retained
