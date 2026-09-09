@@ -52,6 +52,11 @@ export const metadata: Metadata = {
     description:
       "Mesh with digital business owners around the world. Learn, inspire, build, and host retreats together.",
   },
+  // Apple Smart App Banner — Safari on iOS renders a native "Open in App
+  // Store" banner from this tag alone, using the Mesh App Store listing.
+  other: {
+    "apple-itunes-app": "app-id=6795811158",
+  },
 };
 
 export default function RootLayout({
